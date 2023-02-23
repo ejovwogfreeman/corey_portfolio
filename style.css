@@ -9,14 +9,20 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #c7cdd2;
+  font-family: "Raleway", sans-serif;
+}
+
 /* header style */
 header {
-  padding: 0px 30px;
+  padding: 0px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 10px solid #72818e;
   height: 190px;
+  background-color: white;
 }
 
 header ul {
@@ -36,11 +42,12 @@ header .left img {
 }
 
 header .left .text {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 header .left .text p {
   margin: 13px 0px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 header .left .text ul li {
@@ -49,8 +56,8 @@ header .left .text ul li {
 
 header .left .text ul li a {
   color: white;
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +80,7 @@ header .left .text ul li:nth-child(5) a {
   background-color: #286a8d;
 }
 header .left .text ul li:nth-child(6) a {
-  background-color: orange;
+  background-color: #ffa500;
 }
 
 header .left ul {
@@ -85,7 +92,16 @@ header .right ul {
 }
 
 header .right ul li {
-  margin-left: 20px;
+  margin-left: 50px;
+}
+
+header .right ul li a {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease-in-out;
+}
+
+header .right ul li a:hover {
+  color: rgb(240, 139, 156);
 }
 
 nav {
@@ -93,7 +109,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: #72818e;
-  padding: 0px 30px;
+  padding: 0px 80px;
+  padding-left: 100px;
   height: 50px;
 }
 
@@ -114,4 +131,136 @@ nav .right ul li {
 
 nav ul a {
   color: white;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul a:hover {
+  color: pink;
+}
+
+/* section style */
+
+section {
+  padding: 50px 80px;
+  display: flex;
+}
+
+section img {
+  width: 100px;
+  height: 100px;
+}
+
+section video {
+  width: 100%;
+  padding: 30px;
+}
+
+section main {
+  margin-right: 50px;
+}
+
+section main article {
+  background-color: white;
+  padding: 50px;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 50px;
+  border-top: 10px solid #e3e0dd;
+  border-radius: 3px;
+}
+
+section main article h1 {
+  font-size: 40px;
+  color: black;
+  line-height: 50px;
+}
+
+section main article small {
+  margin: 20px 0px;
+  display: block;
+}
+
+section main article a {
+  color: rgb(142, 142, 228);
+}
+
+section aside ul {
+  list-style-type: none;
+  border-top: 10px solid pink;
+  border-radius: 3px;
+  line-height: 40px;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+section aside ul li {
+  border-bottom: 1px solid whitesmoke;
+}
+section aside form {
+  background-color: white;
+  border-top: 10px solid pink;
+  margin-bottom: 50px;
+  padding: 30px;
+  border-radius: 3px;
+}
+section aside form p {
+  margin-bottom: 20px;
+}
+section aside form input {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+section aside form input:last-child {
+  margin-bottom: 0px;
+}
+section aside form .btn {
+  background-color: rgb(212, 91, 91);
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+section aside form .btn:hover {
+  background-color: white;
+  color: black;
+}
+section aside .form {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+section aside div {
+  background-color: white;
+  border-top: 10px solid pink;
+  margin-bottom: 50px;
+  border-radius: 3px;
+  padding: 30px;
+}
+
+section aside div span {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+  margin-top: 20px;
+}
+
+section aside div span img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: white;
 }
