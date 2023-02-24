@@ -150,7 +150,7 @@ section img {
   height: 100px;
 }
 
-section video {
+section iframe {
   width: 100%;
   padding: 30px;
 }
@@ -207,6 +207,9 @@ section aside form {
 section aside form p {
   margin-bottom: 20px;
 }
+section aside a {
+  color: rgba(0, 0, 0, 0.8);
+}
 section aside form input {
   width: 100%;
   display: block;
@@ -256,6 +259,8 @@ section aside div span img {
   height: 150px;
   object-fit: contain;
 }
+
+/* footer style */
 
 footer {
   display: flex;
