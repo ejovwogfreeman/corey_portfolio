@@ -1,2 +1,3 @@
 # corey_portfolio
-This is corey ms portfolio website
+This my portfolio
+https://aiwekhoeaisosa.netlify.app/
